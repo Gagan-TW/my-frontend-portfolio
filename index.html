@@ -1,0 +1,1026 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gagandeep Kaur – Portfolio</title>
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Base font -->
+    <style>
+      body {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          sans-serif;
+      }
+    </style>
+  </head>
+
+  <body class="bg-[#F4F7FF] text-slate-900" id="top">
+    <!-- ================= HEADER ================= -->
+   <header class="sticky top-0 z-40 bg-white/90 backdrop-blur border-b border-slate-200">
+  <div class="max-w-6xl mx-auto px-4">
+    <div class="flex h-16 items-center justify-between">
+      <!-- Logo / name -->
+      <a href="#top"
+         class="text-xl font-semibold text-[#2563EB] tracking-tight">
+        Gagandeep Kaur
+      </a>
+
+      <!-- Desktop nav -->
+      <nav class="hidden lg:flex items-center gap-8 text-sm font-medium text-slate-700">
+        <a href="#about" class="hover:text-[#2563EB]">About</a>
+        <a href="#skills" class="hover:text-[#2563EB]">Skills</a>
+        <a href="#experience" class="hover:text-[#2563EB]">Experience</a>
+        <a href="#education" class="hover:text-[#2563EB]">Education</a>
+        <a href="#contact" class="hover:text-[#2563EB]">Contact</a>
+
+        <a href="#contact"
+           class="rounded-full bg-[#2563EB] px-4 py-2 text-white text-sm font-semibold shadow-sm hover:bg-[#1D4ED8] transition">
+          Resume
+        </a>
+      </nav>
+
+      <!-- Mobile: hamburger button -->
+      <button
+        id="nav-open"
+        class="lg:hidden inline-flex items-center justify-center rounded-full p-2 text-slate-700
+               hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-[#2563EB]"
+        aria-label="Open main menu">
+        ☰
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile full-screen menu -->
+  <div id="nav-sheet" class="fixed inset-0 z-50 hidden lg:hidden" aria-hidden="true">
+    <!-- Dim background -->
+    <div id="nav-backdrop" class="absolute inset-0 bg-black/40"></div>
+
+    <!-- White sheet -->
+    <div class="relative mx-3 mt-4 bg-white rounded-2xl shadow-xl max-h-[90vh] flex flex-col">
+      <!-- Top row: name + close -->
+      <div class="flex items-center justify-between px-4 py-4 border-b border-slate-200">
+        <span class="text-lg font-semibold text-[#2563EB]">Gagandeep Kaur</span>
+        <button
+          id="nav-close"
+          class="inline-flex h-8 w-8 items-center justify-center rounded-full text-slate-700
+                 hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-[#2563EB]"
+          aria-label="Close menu">
+          ✕
+        </button>
+      </div>
+
+      <!-- Links -->
+      <nav class="flex-1 px-4 py-4 space-y-6 text-base font-medium text-slate-800">
+        <a href="#about" class="block nav-mobile-link">About</a>
+        <a href="#skills" class="block nav-mobile-link">Skills</a>
+        <a href="#experience" class="block nav-mobile-link">Experience</a>
+        <a href="#education" class="block nav-mobile-link">Education</a>
+        <a href="#contact" class="block nav-mobile-link">Contact</a>
+      </nav>
+
+      <!-- Bottom blue bar with Resume button -->
+      <div class="px-4 pb-4">
+        <a href="#contact"
+           class="block w-full text-center rounded-full bg-[#2563EB] px-4 py-3 text-sm font-semibold text-white
+                  shadow-sm hover:bg-[#1D4ED8] transition">
+          Resume
+        </a>
+      </div>
+
+      <div class="h-2 w-full rounded-b-2xl bg-[#2563EB]"></div>
+    </div>
+  </div>
+</header>
+
+    <!-- ================= HERO / INTRO ================= -->
+    <!-- scroll-mt-24 so section title is fully visible when jumped to -->
+    <section
+      id="about"
+      class="scroll-mt-24 bg-[#F4F7FF] text-slate-900"
+    >
+      <div class="max-w-6xl mx-auto px-4 pt-10 pb-16 md:pt-20 md:pb-24">
+        <div
+          class="flex flex-col md:flex-row md:items-center md:justify-between gap-10"
+        >
+          <!-- LEFT: text content -->
+          <div class="max-w-xl text-center md:text-left">
+           
+
+            <h1
+              class="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 leading-tight"
+            >
+              Hi, I'm
+              <span class="text-[#2563EB]">Gagandeep Kaur</span>
+            </h1>
+
+            <p class="mt-3 text-lg font-semibold text-slate-800">
+             Front-End Developer &amp; Technical Writer
+            </p>
+
+            <p
+              class="mt-4 text-sm sm:text-base text-slate-600 leading-relaxed"
+            >
+              I design responsive, high-performance web interfaces and create developer-friendly documentation that makes complex systems easy to understand.
+            </p>
+
+            <!-- Buttons -->
+            <div
+              class="mt-6 flex flex-col sm:flex-row gap-3 justify-center md:justify-start"
+            >
+              <a
+                href="#skills"
+                class="inline-flex items-center justify-center rounded-full bg-[#2563EB] px-6 py-3 text-sm font-semibold text-white shadow-md hover:bg-[#1D4ED8] transition"
+              >
+                View My Work
+                <span class="ml-2 text-lg">→</span>
+              </a>
+
+              <a
+                href="#contact"
+                class="inline-flex items-center justify-center rounded-full border border-slate-300 bg-white px-6 py-3 text-sm font-semibold text-slate-800 hover:bg-slate-50 transition"
+              >
+                Contact Me
+              </a>
+            </div>
+
+            <!-- Social icons -->
+            <div class="mt-6 flex justify-center md:justify-start gap-4">
+              <!-- GitHub -->
+              <a
+                href="#"
+                class="flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-800 hover:border-[#2563EB] hover:text-[#2563EB] shadow-sm transition"
+                aria-label="GitHub"
+              >
+               <img src="assets/img/github-icon.svg" class="w-full h-5" alt="">
+              </a>
+
+              <!-- Email -->
+              <a
+                href="mailto:you@example.com"
+                class="flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-800 hover:border-[#2563EB] hover:text-[#2563EB] shadow-sm transition"
+                aria-label="Email"
+              >
+                <img src="assets/img/mail-icon.svg" class="w-full h-5" alt="">
+              </a>
+
+              <!-- LinkedIn -->
+              <a
+                href="#"
+                class="flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-800 hover:border-[#2563EB] hover:text-[#2563EB] shadow-sm transition"
+                aria-label="LinkedIn"
+              >
+                <img src="assets/img/linkedin-icon.svg" class="w-full  h-5">
+              </a>
+            </div>
+          </div>
+
+          <!-- RIGHT: circular visual -->
+          <div class="flex justify-center md:justify-end">
+            <div
+              class="relative h-64 w-64 sm:h-72 sm:w-72 rounded-full bg-gradient-to-b from-[#E0ECFF] to-[#F4F7FF] flex items-center justify-center shadow-[0_20px_60px_rgba(37,99,235,0.25)]"
+            >
+              <!-- Rings -->
+              <div
+                class="h-52 w-52 rounded-full border-[10px] border-[#BFDBFE] flex items-center justify-center"
+              >
+                <div
+                  class="h-40 w-40 rounded-full bg-[#E5EDFF] flex items-center justify-center"
+                >
+                  <span class="text-4xl font-extrabold text-[#2563EB]">
+                    GK
+                  </span>
+                </div>
+              </div>
+
+              <!-- Floating tech tags -->
+              <div
+                class="absolute -top-4 left-6 rounded-2xl bg-white shadow-md px-4 py-2 text-xs font-semibold text-[#2563EB]"
+              >
+                React
+              </div>
+
+              <div
+                class="absolute -bottom-4 right-8 rounded-2xl bg-white shadow-md px-4 py-2 text-xs font-semibold text-[#059669]"
+              >
+                Tailwind
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ABOUT ME ================= -->
+<section id="about" class="bg-[#F4F7FF] scroll-mt-24 py-12 sm:py-16 lg:py-20">
+  <div class="max-w-5xl mx-auto px-4">
+    <!-- Heading -->
+    <header class="text-center">
+      <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-slate-900">
+        About Me
+      </h2>
+      <div class="mt-2 h-1 w-16 mx-auto rounded-full bg-[#2563EB]"></div>
+    </header>
+
+    <!-- Main about card -->
+    <article
+      class="mt-8 rounded-2xl bg-white border border-slate-100 shadow-md
+             px-5 py-6 sm:px-8 sm:py-8 md:px-10 md:py-8"
+    >
+      <p class="text-sm sm:text-base leading-relaxed text-slate-700">
+       I am a Front-End Developer and Technical Writer with a strong academic and content-creation background. After nearly a decade in higher education and curriculum design, I moved into industry documentation, where I create user guides, online help, release notes, and training content, and I am now deeply focused on learning and implementing docs-as-code workflows using Git and static site generators.
+
+      </p>
+
+      <p class="mt-4 text-sm sm:text-base leading-relaxed text-slate-700">
+        As a developer, I enjoy turning ideas into responsive, accessible interfaces using HTML, CSS, JavaScript, and modern tooling. I focus on building pages that are easy to navigate, fast to load, and friendly on any device, while integrating APIs in a way that feels seamless to the user.
+      </p>
+
+      <p class="mt-4 text-sm sm:text-base leading-relaxed text-slate-700">
+    As a technical writer, I specialize in explaining complex systems in simple, practical language. I also work with Snagit and Visio for visuals and diagrams, and I am building structured authoring skills with DITA-based practices, ensuring users can get the most out of software products. My goal is to make technology approachable and easy to understand for all users.
+      </p>
+    </article>
+
+    <!-- Soft-skill cards -->
+    <div
+      class="mt-8 grid gap-4 sm:grid-cols-3"
+    >
+      <!-- Card 1 -->
+      <div
+        class="rounded-2xl bg-white shadow-md border border-slate-100
+               px-6 py-5 text-center"
+      >
+        <h3 class="text-sm sm:text-base font-semibold text-[#2563EB]">
+          Problem Solver
+        </h3>
+        <p class="mt-2 text-xs sm:text-sm text-slate-600 leading-relaxed">
+          I tackle complex challenges with analytical thinking and creativity.
+        </p>
+      </div>
+
+      <!-- Card 2 -->
+      <div
+        class="rounded-2xl bg-white shadow-md border border-slate-100
+               px-6 py-5 text-center"
+      >
+        <h3 class="text-sm sm:text-base font-semibold text-[#2563EB]">
+          Team Player
+        </h3>
+        <p class="mt-2 text-xs sm:text-sm text-slate-600 leading-relaxed">
+          I collaborate effectively with designers and backend developers.
+        </p>
+      </div>
+
+      <!-- Card 3 -->
+      <div
+        class="rounded-2xl bg-white shadow-md border border-slate-100
+               px-6 py-5 text-center"
+      >
+        <h3 class="text-sm sm:text-base font-semibold text-[#2563EB]">
+          Detail-Oriented
+        </h3>
+        <p class="mt-2 text-xs sm:text-sm text-slate-600 leading-relaxed">
+          I pay close attention to performance, accessibility, and UX details.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =============== MY SKILLS SECTION =============== -->
+<section id="skills" class="bg-[#F4F7FF] py-16 scroll-mt-24">
+  <div class="max-w-6xl mx-auto px-4">
+    <!-- Section heading -->
+    <div class="text-center">
+      <h2 class="text-3xl sm:text-4xl font-bold text-slate-900">
+        My Skills
+      </h2>
+      <!-- blue underline -->
+      <div class="mt-2 h-1 w-16 bg-[#2563EB] rounded-full mx-auto"></div>
+
+      <p class="mt-4 max-w-2xl mx-auto text-sm sm:text-base text-slate-600">
+        As a frontend developer, I've developed a diverse set of technical and soft
+        skills that help me build robust, user-friendly applications.
+      </p>
+    </div>
+
+    <!-- Cards grid -->
+    <div class="mt-10 grid grid-cols-1 gap-6 md:grid-cols-3">
+      <!-- Card 1: Frontend Development -->
+      <article
+        class="overflow-hidden rounded-2xl bg-white shadow-md border border-slate-200"
+      >
+        <!-- accent bar -->
+        <div class="h-1 w-full bg-[#2563EB]"></div>
+
+        <div class="px-6 py-6">
+          <h3 class="text-lg font-semibold text-slate-900">
+            Frontend Development
+          </h3>
+
+          <div class="mt-4 flex flex-wrap gap-2 text-xs">
+            <span
+              class="inline-flex items-center rounded-full bg-[#EFF6FF] px-3 py-1 font-medium text-[#2563EB]"
+              >JavaScript</span
+            >
+            <span
+              class="inline-flex items-center rounded-full bg-[#EFF6FF] px-3 py-1 font-medium text-[#2563EB]"
+              >TypeScript</span
+            >
+            <span
+              class="inline-flex items-center rounded-full bg-[#EFF6FF] px-3 py-1 font-medium text-[#2563EB]"
+              >React.js</span
+            >
+            <span
+              class="inline-flex items-center rounded-full bg-[#EFF6FF] px-3 py-1 font-medium text-[#2563EB]"
+              >Next.js</span
+            >
+            <span
+              class="inline-flex items-center rounded-full bg-[#EFF6FF] px-3 py-1 font-medium text-[#2563EB]"
+              >Redux</span
+            >
+            <span
+              class="inline-flex items-center rounded-full bg-[#EFF6FF] px-3 py-1 font-medium text-[#2563EB]"
+              >Context API</span
+            >
+            <span
+              class="inline-flex items-center rounded-full bg-[#EFF6FF] px-3 py-1 font-medium text-[#2563EB]"
+              >HTML5</span
+            >
+            <span
+              class="inline-flex items-center rounded-full bg-[#EFF6FF] px-3 py-1 font-medium text-[#2563EB]"
+              >CSS3</span
+            >
+            <span
+              class="inline-flex items-center rounded-full bg-[#EFF6FF] px-3 py-1 font-medium text-[#2563EB]"
+              >SASS</span
+            >
+            <span
+              class="inline-flex items-center rounded-full bg-[#EFF6FF] px-3 py-1 font-medium text-[#2563EB]"
+              >Bootstrap</span
+            >
+            <span
+              class="inline-flex items-center rounded-full bg-[#EFF6FF] px-3 py-1 font-medium text-[#2563EB]"
+              >Tailwind CSS</span
+            >
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 2: Tools & Technologies -->
+      <article
+        class="overflow-hidden rounded-2xl bg-white shadow-md border border-slate-200"
+      >
+        <!-- accent bar -->
+        <div class="h-1 w-full bg-[#A855F7]"></div>
+
+        <div class="px-6 py-6">
+          <h3 class="text-lg font-semibold text-slate-900">
+            Tools &amp; Technologies
+          </h3>
+
+          <div class="mt-4 flex flex-wrap gap-2 text-xs">
+            <span
+              class="inline-flex items-center rounded-full bg-[#F5EBFF] px-3 py-1 font-medium text-[#7C3AED]"
+              >Git</span
+            >
+            <span
+              class="inline-flex items-center rounded-full bg-[#F5EBFF] px-3 py-1 font-medium text-[#7C3AED]"
+              >GitHub</span
+            >
+            <span
+              class="inline-flex items-center rounded-full bg-[#F5EBFF] px-3 py-1 font-medium text-[#7C3AED]"
+              >VS Code</span
+            >
+            <span
+              class="inline-flex items-center rounded-full bg-[#F5EBFF] px-3 py-1 font-medium text-[#7C3AED]"
+              >Chrome DevTools</span
+            >
+            <span
+              class="inline-flex items-center rounded-full bg-[#F5EBFF] px-3 py-1 font-medium text-[#7C3AED]"
+              >API Integration</span
+            >
+            <span
+              class="inline-flex items-center rounded-full bg-[#F5EBFF] px-3 py-1 font-medium text-[#7C3AED]"
+              >Responsive Design</span
+            >
+            <span
+              class="inline-flex items-center rounded-full bg-[#F5EBFF] px-3 py-1 font-medium text-[#7C3AED]"
+              >Webpack</span
+            >
+            <span
+              class="inline-flex items-center rounded-full bg-[#F5EBFF] px-3 py-1 font-medium text-[#7C3AED]"
+              >npm/yarn</span
+            >
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 3: Professional Skills -->
+      <article
+        class="overflow-hidden rounded-2xl bg-white shadow-md border border-slate-200"
+      >
+        <!-- accent bar -->
+        <div class="h-1 w-full bg-[#10B981]"></div>
+
+        <div class="px-6 py-6">
+          <h3 class="text-lg font-semibold text-slate-900">
+            Professional Skills
+          </h3>
+
+          <div class="mt-4 flex flex-wrap gap-2 text-xs">
+            <span
+              class="inline-flex items-center rounded-full bg-[#E6FFF5] px-3 py-1 font-medium text-[#059669]"
+              >Problem-solving</span
+            >
+            <span
+              class="inline-flex items-center rounded-full bg-[#E6FFF5] px-3 py-1 font-medium text-[#059669]"
+              >Analytical Thinking</span
+            >
+            <span
+              class="inline-flex items-center rounded-full bg-[#E6FFF5] px-3 py-1 font-medium text-[#059669]"
+              >Debugging &amp; Troubleshooting</span
+            >
+            <span
+              class="inline-flex items-center rounded-full bg-[#E6FFF5] px-3 py-1 font-medium text-[#059669]"
+              >Team Collaboration</span
+            >
+            <span
+              class="inline-flex items-center rounded-full bg-[#E6FFF5] px-3 py-1 font-medium text-[#059669]"
+              >Frontend Architecture</span
+            >
+            <span
+              class="inline-flex items-center rounded-full bg-[#E6FFF5] px-3 py-1 font-medium text-[#059669]"
+              >Code Reusability</span
+            >
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============== WORK EXPERIENCE ============== -->
+<section
+  id="experience"
+  class="scroll-mt-24 bg-white py-16 md:py-20"
+>
+  <div class="max-w-5xl mx-auto px-4">
+    <!-- Heading -->
+    <div class="text-center">
+      <h2 class="text-3xl md:text-4xl font-bold text-slate-900">
+        Work Experience
+      </h2>
+      <div class="mt-2 h-1 w-20 mx-auto rounded-full bg-[#2563EB]"></div>
+
+      <p class="mt-4 text-sm md:text-base text-slate-600">
+        My professional journey as a frontend developer.
+      </p>
+    </div>
+
+    <!-- Timeline wrapper -->
+    <div class="mt-10 md:mt-14 relative">
+      <!-- Vertical line (desktop only) -->
+      <div
+        class="hidden md:block absolute left-6 top-0 bottom-0 border-l border-slate-200"
+        aria-hidden="true"
+      ></div>
+
+      <!-- ========= EXPERIENCE 1 ========= -->
+      <article class="relative flex flex-col md:flex-row gap-4 md:gap-6">
+        <!-- Timeline badge -->
+        <div class="md:absolute md:-left-1 md:top-6 flex md:block">
+          <div
+            class="h-10 w-10 md:h-11 md:w-11 rounded-full bg-[#2563EB] text-white text-sm font-semibold flex items-center justify-center shadow-lg"
+          >
+            KP
+          </div>
+        </div>
+
+        <!-- Card -->
+        <div
+          class="mt-2 md:mt-0 w-full md:ml-16 bg-white border border-slate-100 rounded-2xl shadow-md px-6 py-6 md:px-8 md:py-7"
+        >
+          <!-- Title row -->
+          <div
+            class="flex flex-col md:flex-row md:items-start md:justify-between gap-2"
+          >
+            <div>
+              <h3 class="text-base md:text-lg font-semibold text-slate-900">
+                Front-End Developer
+              </h3>
+              <a
+                href="#"
+                class="text-sm font-medium text-[#2563EB] hover:underline"
+              >
+                Klakpad
+              </a>
+            </div>
+
+            <span
+              class="inline-flex items-center self-start rounded-full bg-[#E5EDFF] px-3 py-1 text-[11px] md:text-xs font-semibold text-[#2563EB] whitespace-nowrap"
+            >
+              Oct 2023 – Present
+            </span>
+          </div>
+
+          <!-- Bullet list -->
+          <ul
+            class="mt-4 space-y-2 text-sm md:text-[15px] leading-relaxed text-slate-700 list-disc pl-4"
+          >
+            <li>
+              Developed complex user interfaces using JavaScript, React, and
+              Next.js, ensuring a user-friendly experience.
+            </li>
+            <li>
+              Implemented and tested website functionality to ensure successful
+              operations across all platforms.
+            </li>
+            <li>
+              Collaborated with backend developers to implement APIs, ensuring
+              seamless integration of frontend applications with backend
+              services.
+            </li>
+            <li>
+              Conducted testing processes, reducing website load time by 25%
+              and improving cross-platform compatibility.
+            </li>
+            <li>
+              Streamlined codebase for the web platform, increasing scalability
+              and maintainability by 30%.
+            </li>
+          </ul>
+
+          <!-- Key project -->
+          <div class="mt-5 border-t border-slate-200 pt-4">
+            <p class="text-sm font-semibold text-slate-900 mb-2">
+              Key Project:
+            </p>
+
+            <div
+              class="rounded-xl bg-[#F5F7FF] border border-[#E0E7FF] px-4 py-3"
+            >
+              <a
+                href="#"
+                class="text-sm font-semibold text-[#2563EB] hover:underline"
+              >
+                Interactive Business Management Dashboard
+              </a>
+              <p
+                class="mt-2 text-xs sm:text-sm leading-relaxed text-slate-700"
+              >
+                Developed an interactive business management dashboard using
+                React TypeScript, integrating real-time data, visualizations,
+                and role-based access. Improved user engagement by 40%, reduced
+                load times by 50%, and boosted conversions by 20%.
+              </p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Spacing between cards -->
+      <div class="h-10"></div>
+
+      <!-- ========= EXPERIENCE 2 ========= -->
+      <article class="relative flex flex-col md:flex-row gap-4 md:gap-6">
+        <!-- Timeline badge -->
+        <div class="md:absolute md:-left-1 md:top-6 flex md:block">
+          <div
+            class="h-10 w-10 md:h-11 md:w-11 rounded-full bg-[#2563EB] text-white text-sm font-semibold flex items-center justify-center shadow-lg"
+          >
+            EL
+          </div>
+        </div>
+
+        <!-- Card -->
+        <div
+          class="mt-2 md:mt-0 w-full md:ml-16 bg-white border border-slate-100 rounded-2xl shadow-md px-6 py-6 md:px-8 md:py-7"
+        >
+          <!-- Title row -->
+          <div
+            class="flex flex-col md:flex-row md:items-start md:justify-between gap-2"
+          >
+            <div>
+              <h3 class="text-base md:text-lg font-semibold text-slate-900">
+                Front-End Development Intern
+              </h3>
+              <a
+                href="#"
+                class="text-sm font-medium text-[#2563EB] hover:underline"
+              >
+                Ennovate Lab
+              </a>
+            </div>
+
+            <span
+              class="inline-flex items-center self-start rounded-full bg-[#E5EDFF] px-3 py-1 text-[11px] md:text-xs font-semibold text-[#2563EB] whitespace-nowrap"
+            >
+              May 2022 – Jun 2023
+            </span>
+          </div>
+
+          <!-- Bullet list -->
+          <ul
+            class="mt-4 space-y-2 text-sm md:text-[15px] leading-relaxed text-slate-700 list-disc pl-4"
+          >
+            <li>
+              Collaborated with a team of designers and back-end developers to
+              develop complex web user interfaces for websites using React.
+            </li>
+            <li>
+              Developed a scalable product for early-stage startups to connect
+              with mentors, access resources, and facilitate growth.
+            </li>
+            <li>
+              Integrated a third-party API, improving functionality and user
+              experience.
+            </li>
+            <li>
+              Devised a scalable platform for early-stage startups, resulting in
+              a 40% increase in user retention.
+            </li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= EDUCATION & CERTIFICATIONS ================= -->
+<section id="education" class="scroll-mt-24 bg-[#F4F7FF] py-16 md:py-20">
+  <div class="max-w-6xl mx-auto px-4">
+    <!-- Section heading -->
+    <div class="text-center">
+      <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-slate-900">
+        Education &amp; Certifications
+      </h2>
+      <!-- blue underline -->
+      <div class="mt-2 h-0.5 w-16 mx-auto rounded-full bg-[#2563EB]"></div>
+
+      <p class="mt-4 text-sm sm:text-base text-slate-600">
+        My educational background and professional certifications.
+      </p>
+    </div>
+
+    <!-- Cards grid -->
+    <div class="mt-10 grid gap-6 md:grid-cols-2">
+      <!-- LEFT: main degree card -->
+      <article
+        class="rounded-2xl bg-white border border-slate-100 shadow-sm overflow-hidden"
+      >
+        <!-- top band -->
+        <div
+          class="flex items-center justify-between px-6 py-4 bg-[#E4EEFF]"
+        >
+          <div>
+            <h3 class="text-sm sm:text-base font-semibold text-slate-900">
+              Bachelor of Science
+            </h3>
+            <p class="mt-1 text-xs sm:text-sm text-slate-600">
+              Computer Science
+            </p>
+          </div>
+
+          <span
+            class="inline-flex items-center rounded-full bg-[#2563EB] px-3 py-1 text-[11px] font-semibold text-white"
+          >
+            2022 – 2026
+          </span>
+        </div>
+
+        <!-- body -->
+        <div class="px-6 py-5">
+          <p class="text-sm font-semibold text-slate-900">
+            Ladoke Akintola University
+          </p>
+          <p class="mt-3 text-sm sm:text-base leading-relaxed text-slate-600">
+            Pursuing a comprehensive education in computer science, focusing on
+            software development, algorithms, and system design principles.
+          </p>
+        </div>
+      </article>
+
+      <!-- RIGHT COLUMN: certifications stacked -->
+      <div class="space-y-6">
+        <!-- Certification 1 -->
+        <article
+          class="rounded-2xl bg-white border border-slate-100 shadow-sm overflow-hidden"
+        >
+          <!-- top band -->
+          <div
+            class="flex items-center justify-between px-6 py-4 bg-[#F8E9FF]"
+          >
+            <h3 class="text-sm sm:text-base font-semibold text-slate-900">
+              Complete React Developer
+            </h3>
+            <span
+              class="inline-flex items-center rounded-full bg-[#F973C9] px-3 py-1 text-[11px] font-semibold text-white"
+            >
+              Feb 2022
+            </span>
+          </div>
+
+          <!-- body -->
+          <div class="px-6 py-5">
+            <p class="text-sm font-semibold text-slate-900">Udemy</p>
+            <p class="mt-3 text-sm sm:text-base leading-relaxed text-slate-600">
+              Comprehensive course covering React, Redux, Hooks, GraphQL, and
+              advanced frontend development patterns and practices.
+            </p>
+          </div>
+        </article>
+
+        <!-- Certification 2 -->
+        <article
+          class="rounded-2xl bg-white border border-slate-100 shadow-sm overflow-hidden"
+        >
+          <!-- top band -->
+          <div
+            class="flex items-center justify-between px-6 py-4 bg-[#DFFCF3]"
+          >
+            <h3 class="text-sm sm:text-base font-semibold text-slate-900">
+              Advanced CSS &amp; Sass
+            </h3>
+            <span
+              class="inline-flex items-center rounded-full bg-[#10B981] px-3 py-1 text-[11px] font-semibold text-white"
+            >
+              Apr 2022
+            </span>
+          </div>
+
+          <!-- body -->
+          <div class="px-6 py-5">
+            <p class="text-sm font-semibold text-slate-900">Udemy</p>
+            <p class="mt-3 text-sm sm:text-base leading-relaxed text-slate-600">
+              In-depth course focusing on advanced CSS techniques, animations,
+              Sass preprocessor, and modern CSS layout methods.
+            </p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT / GET IN TOUCH ================= -->
+<section
+  id="contact"
+  class="scroll-mt-24 bg-[#F4F7FF] py-16 md:py-20"
+>
+  <div class="max-w-6xl mx-auto px-4">
+    <!-- Heading -->
+    <div class="text-center max-w-2xl mx-auto">
+      <h2 class="text-2xl sm:text-3xl font-bold text-slate-900">
+        Get In Touch
+      </h2>
+      <div class="mt-2 h-0.5 w-16 bg-[#2563EB] mx-auto rounded-full"></div>
+
+      <p class="mt-4 text-sm sm:text-base text-slate-600 leading-relaxed">
+        Have a project in mind or want to discuss potential opportunities?
+        I&rsquo;d love to hear from you.
+      </p>
+    </div>
+
+    <!-- Cards: contact info + form -->
+    <div class="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+      <!-- LEFT CARD: contact information -->
+      <div
+        class="bg-white rounded-2xl border border-slate-200 shadow-sm px-6 py-6 sm:px-8 sm:py-8"
+      >
+        <h3 class="text-lg font-semibold text-slate-900 mb-4">
+          Contact Information
+        </h3>
+
+        <div class="space-y-5 text-sm text-slate-700">
+          <!-- Email -->
+          <div class="flex items-start gap-4">
+            <div
+              class="flex h-10 w-10 items-center justify-center rounded-full bg-[#2563EB]/10 text-[#2563EB] text-lg"
+            >
+              ✉
+            </div>
+            <div>
+              <p class="font-medium">Email</p>
+              <a
+                href="mailto:you@example.com"
+                class="text-[#2563EB] hover:underline break-all"
+              >
+                you@example.com
+              </a>
+            </div>
+          </div>
+
+          <!-- Phone -->
+          <div class="flex items-start gap-4">
+            <div
+              class="flex h-10 w-10 items-center justify-center rounded-full bg-[#2563EB]/10 text-[#2563EB] text-lg"
+            >
+              ☎
+            </div>
+            <div>
+              <p class="font-medium">Phone</p>
+              <p>+91 00000 00000</p>
+            </div>
+          </div>
+
+          <!-- GitHub -->
+          <div class="flex items-start gap-4">
+            <div
+              class="flex h-10 w-10 items-center justify-center rounded-full bg-[#2563EB]/10 text-[#2563EB] text-lg"
+            >
+              🐱
+            </div>
+            <div>
+              <p class="font-medium">GitHub</p>
+              <a
+                href="#"
+                class="text-[#2563EB] hover:underline break-all"
+              >
+                github.com/your-handle
+              </a>
+            </div>
+          </div>
+
+          <!-- LinkedIn -->
+          <div class="flex items-start gap-4">
+            <div
+              class="flex h-10 w-10 items-center justify-center rounded-full bg-[#2563EB]/10 text-[#2563EB] text-lg"
+            >
+              in
+            </div>
+            <div>
+              <p class="font-medium">LinkedIn</p>
+              <a
+                href="#"
+                class="text-[#2563EB] hover:underline"
+              >
+                Connect on LinkedIn
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT CARD: contact form -->
+      <div
+        class="bg-white rounded-2xl border border-slate-200 shadow-sm px-6 py-6 sm:px-8 sm:py-8"
+      >
+        <h3 class="text-lg font-semibold text-slate-900 mb-4">
+          Send Me a Message
+        </h3>
+
+        <form class="space-y-4 text-sm">
+          <!-- Name -->
+          <div class="space-y-1">
+            <label
+              for="name"
+              class="block font-medium text-slate-800"
+              >Your Name</label
+            >
+            <input
+              id="name"
+              type="text"
+              placeholder="John Doe"
+              class="w-full rounded-lg border border-slate-200 bg-white px-3 py-2
+                     text-sm text-slate-900 placeholder:text-slate-400
+                     focus:outline-none focus:ring-2 focus:ring-[#2563EB]/40
+                     focus:border-[#2563EB]"
+            />
+          </div>
+
+          <!-- Email -->
+          <div class="space-y-1">
+            <label
+              for="email"
+              class="block font-medium text-slate-800"
+              >Your Email</label
+            >
+            <input
+              id="email"
+              type="email"
+              placeholder="john@example.com"
+              class="w-full rounded-lg border border-slate-200 bg-white px-3 py-2
+                     text-sm text-slate-900 placeholder:text-slate-400
+                     focus:outline-none focus:ring-2 focus:ring-[#2563EB]/40
+                     focus:border-[#2563EB]"
+            />
+          </div>
+
+          <!-- Message -->
+          <div class="space-y-1">
+            <label
+              for="message"
+              class="block font-medium text-slate-800"
+              >Message</label
+            >
+            <textarea
+              id="message"
+              rows="4"
+              placeholder="Your message here..."
+              class="w-full rounded-lg border border-slate-200 bg-white px-3 py-2
+                     text-sm text-slate-900 placeholder:text-slate-400
+                     focus:outline-none focus:ring-2 focus:ring-[#2563EB]/40
+                     focus:border-[#2563EB] resize-none"
+            ></textarea>
+          </div>
+
+          <button
+            type="submit"
+            class="mt-2 inline-flex w-full items-center justify-center rounded-lg
+                   bg-[#2563EB] px-4 py-2.5 text-sm font-semibold text-white
+                   shadow-sm hover:bg-[#1D4ED8] transition"
+          >
+            Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+<footer class="bg-[#111827] text-slate-200 mt-12">
+  <div class="max-w-6xl mx-auto px-4 py-8 space-y-6">
+    <!-- Name -->
+    <div class="text-center">
+      <p class="text-lg font-semibold">Gagandeep Kaur</p>
+    </div>
+
+    <!-- Social icons -->
+    <div class="flex justify-center gap-4 text-xl">
+      <a
+        href="#"
+        aria-label="GitHub"
+        class="inline-flex h-9 w-9 items-center justify-center rounded-full
+               border border-slate-500/60 hover:border-white hover:text-white transition"
+      >
+        🐱
+      </a>
+      <a
+        href="mailto:you@example.com"
+        aria-label="Email"
+        class="inline-flex h-9 w-9 items-center justify-center rounded-full
+               border border-slate-500/60 hover:border-white hover:text-white transition"
+      >
+        ✉
+      </a>
+      <a
+        href="#"
+        aria-label="LinkedIn"
+        class="inline-flex h-9 w-9 items-center justify-center rounded-full
+               border border-slate-500/60 hover:border-white hover:text-white transition"
+      >
+        in
+      </a>
+    </div>
+
+    <!-- Nav links -->
+    <nav
+      class="flex flex-wrap justify-center gap-4 text-sm text-slate-300"
+    >
+      <a href="#about" class="hover:text-white">About</a>
+      <a href="#skills" class="hover:text-white">Skills</a>
+      <a href="#experience" class="hover:text-white">Experience</a>
+      <a href="#education" class="hover:text-white">Education</a>
+      <a href="#contact" class="hover:text-white">Contact</a>
+    </nav>
+
+    <!-- Copyright -->
+    <p class="text-center text-xs text-slate-400 border-t border-slate-700/60 pt-4">
+      © 2025 Gagandeep Kaur. All rights reserved.
+    </p>
+  </div>
+</footer>
+
+
+
+  <script>
+  
+  const sheet = document.getElementById('nav-sheet');
+  const openBtn = document.getElementById('nav-open');
+  const closeBtn = document.getElementById('nav-close');
+  const backdrop = document.getElementById('nav-backdrop');
+  const links = document.querySelectorAll('.nav-mobile-link');
+
+  function openMenu() {
+    sheet.classList.remove('hidden');
+    document.body.classList.add('overflow-hidden');
+  }
+
+  function closeMenu() {
+    sheet.classList.add('hidden');
+    document.body.classList.remove('overflow-hidden');
+  }
+
+  openBtn.addEventListener('click', openMenu);
+  closeBtn.addEventListener('click', closeMenu);
+  backdrop.addEventListener('click', closeMenu);
+  links.forEach(link => link.addEventListener('click', closeMenu));
+
+</script>
+  </body>
+</html>
