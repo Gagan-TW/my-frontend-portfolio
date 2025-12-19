@@ -54,7 +54,7 @@
   </div>
 
   <!-- Mobile full-screen menu -->
-  <div id="nav-sheet" class="fixed inset-0 z-50 hidden lg:hidden" aria-hidden="true">
+  <div id="nav-sheet" class="fixed inset-0  hidden lg:hidden" aria-hidden="true">
     <!-- Dim background -->
     <div id="nav-backdrop" class="absolute inset-0 bg-black/40"></div>
 
@@ -199,7 +199,7 @@
               <div
                 class="absolute -top-4 left-6 rounded-2xl bg-white shadow-md px-4 py-2 text-xs font-semibold text-[#2563EB]"
               >
-                React
+                TW
               </div>
 
               <div
@@ -430,183 +430,228 @@
 
 
 <!-- ================= WORK EXPERIENCE ================= -->
-<section id="experience" class="scroll-mt-24 bg-white">
-  <div class="max-w-5xl mx-auto px-4 py-16 md:py-20">
+<section
+  id="experience"
+  class="scroll-mt-24 bg-white py-16 md:py-20"
+>
+  <div class="max-w-6xl mx-auto px-4">
+
     <!-- Heading -->
-    <div class="text-center mb-10">
+    <div class="text-center mb-10 md:mb-12">
       <h2 class="text-3xl md:text-4xl font-bold text-slate-900">
         Work Experience
       </h2>
-      <div class="mt-2 h-1 w-24 mx-auto rounded-full bg-[#2563EB]"></div>
-      <p class="mt-4 text-sm sm:text-base text-slate-600">
-        My professional journey as a technical writer and front-end developer.
+      <div class="mt-2 h-1 w-16 mx-auto rounded-full bg-[#2563EB]"></div>
+      <p class="mt-4 text-sm md:text-base text-slate-600">
+        My professional journey across technical writing, content strategy, and frontend development.
       </p>
     </div>
 
-    <!-- Timeline wrapper -->
-    <div class="relative">
-      <!-- Vertical line (desktop) -->
-      <div
-        class="hidden sm:block absolute left-6 top-0 bottom-0 w-px bg-slate-200"
-        aria-hidden="true"
-      ></div>
+    <!-- Timeline column -->
+    <div class="relative border-l border-slate-200 ml-6 md:ml-10 space-y-10">
 
-      <!-- === ITEM 1: Cubastion === -->
-      <article class="relative flex gap-4 sm:gap-6">
-        <!-- Circle with initials -->
-        <div class="flex-shrink-0">
-          <div
-            class="mt-1 sm:mt-4 h-10 w-10 sm:h-12 sm:w-12 rounded-full bg-[#2563EB]
-                   text-white flex items-center justify-center text-sm sm:text-base font-semibold
-                   shadow-lg"
-          >
-            GK
-          </div>
+      <!-- CUBASTION CONSULTING – TECHNICAL WRITER -->
+      <div class="relative pl-6">
+        <!-- avatar circle -->
+        <div
+          class="absolute -left-9 top-4 h-10 w-10 rounded-full bg-[#2563EB] text-white flex items-center justify-center text-sm font-semibold shadow-lg"
+        >
+          GK
         </div>
 
-        <!-- Card -->
-        <div
-          class="flex-1 rounded-2xl bg-white shadow-md border border-slate-100
-                 px-5 py-5 sm:px-7 sm:py-6"
+        <!-- card -->
+        <article
+          class="bg-white rounded-2xl shadow-md border border-slate-100 px-5 py-5 md:px-7 md:py-6"
         >
-          <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3">
+          <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-2">
             <div>
-              <h3 class="text-base sm:text-lg font-semibold text-slate-900">
-                Associate Consultant – Technical Writer
+              <h3 class="text-base md:text-lg font-semibold text-slate-900">
+                Technical Writer
               </h3>
-              <p class="mt-1 text-sm font-medium text-[#2563EB]">
-                Cubastion Consulting Pvt. Ltd.
+              <p class="text-sm font-medium text-[#2563EB]">
+                Cubastion Consulting Pvt. Ltd. – MoRTH Project
               </p>
             </div>
-
-            <!-- Date pill -->
             <span
-              class="inline-flex items-center self-start rounded-full bg-[#E0ECFF]
-                     px-3 py-1 text-xs font-medium text-[#2563EB]"
+              class="inline-flex items-center rounded-full bg-[#E0EAFF] px-3 py-1 text-xs font-semibold text-[#1D4ED8]"
             >
               Jul 2025 – Present
             </span>
           </div>
 
-          <!-- Bullet list -->
-          <ul class="mt-4 space-y-2 text-sm leading-relaxed text-slate-700">
+          <ul class="mt-4 space-y-2 text-sm text-slate-700 leading-relaxed">
             <li>
-              Document end-to-end workflows for large-scale road and transport
-              portals, including admin, configuration, and troubleshooting guides.
+              Create system overviews, administrator guides, and configuration guides
+              for national road-transport portals, following the Google Developer Style Guide.
             </li>
             <li>
-              Collaborate with product managers, developers, QA, and support teams
-              to capture functional requirements and translate them into clear,
-              user-focused documentation.
+              Collaborate with product owners, developers, and QA to map complex .NET-based
+              workflows into clear, task-oriented documentation.
             </li>
             <li>
-              Apply docs-as-code practices with Git and Markdown, aligning
-              documentation closely with the .NET-based application lifecycle.
+              Apply docs-as-code practices using Git, Markdown, and static-site generators
+              to keep product documentation version-controlled and review-friendly.
             </li>
             <li>
-              Standardize templates and style using the Google developer style
-              guide, improving consistency and review efficiency.
+              Design reusable templates and checklists that improve consistency across
+              multiple applications in the MoRTH ecosystem.
             </li>
           </ul>
+        </article>
+      </div>
 
-          <!-- Key project box -->
-          <div
-            class="mt-5 rounded-xl bg-[#F4F7FF] border border-[#E0ECFF]
-                   px-4 py-3 text-sm"
-          >
-            <p class="font-semibold text-slate-900 mb-1">
-              Key Project: National Highway e-Governance Documentation Suite
-            </p>
-            <p class="text-slate-700">
-              Led the structure and authoring of system overviews, administrator
-              guides, and SOPs for multiple highway-management portals, helping
-              stakeholders onboard quickly and reducing support queries.
-            </p>
-          </div>
-        </div>
-      </article>
-
-      <!-- Spacing between items -->
-      <div class="h-10"></div>
-
-      <!-- === ITEM 2: Coding Clubhouse (Volunteer) === -->
-      <article class="relative flex gap-4 sm:gap-6">
-        <!-- Circle with initials -->
-        <div class="flex-shrink-0">
-          <div
-            class="mt-1 sm:mt-4 h-10 w-10 sm:h-12 sm:w-12 rounded-full bg-[#10B981]
-                   text-white flex items-center justify-center text-sm sm:text-base font-semibold
-                   shadow-lg"
-          >
-            CC
-          </div>
-        </div>
-
-        <!-- Card -->
+      <!-- CODING CLUBHOUSE – FRONTEND VOLUNTEER -->
+      <div class="relative pl-6">
         <div
-          class="flex-1 rounded-2xl bg-white shadow-md border border-slate-100
-                 px-5 py-5 sm:px-7 sm:py-6"
+          class="absolute -left-9 top-4 h-10 w-10 rounded-full bg-[#10B981] text-white flex items-center justify-center text-sm font-semibold shadow-lg"
         >
-          <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3">
+          CC
+        </div>
+
+        <article
+          class="bg-white rounded-2xl shadow-md border border-slate-100 px-5 py-5 md:px-7 md:py-6"
+        >
+          <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-2">
             <div>
-              <h3 class="text-base sm:text-lg font-semibold text-slate-900">
-                Volunteer Front-End Developer & Documentation Specialist
+              <h3 class="text-base md:text-lg font-semibold text-slate-900">
+                Volunteer Front-End Developer
               </h3>
-              <p class="mt-1 text-sm font-medium text-[#2563EB]">
+              <p class="text-sm font-medium text-[#10B981]">
                 The Coding Clubhouse
               </p>
             </div>
-
-            <!-- Date pill -->
             <span
-              class="inline-flex items-center self-start rounded-full bg-[#D1FAE5]
-                     px-3 py-1 text-xs font-medium text-[#047857]"
+              class="inline-flex items-center rounded-full bg-[#D1FAE5] px-3 py-1 text-xs font-semibold text-[#047857]"
             >
               Dec 2025 – Jan 2026
             </span>
           </div>
 
-          <!-- Bullet list -->
-          <ul class="mt-4 space-y-2 text-sm leading-relaxed text-slate-700">
+          <ul class="mt-4 space-y-2 text-sm text-slate-700 leading-relaxed">
             <li>
-              Designed and developed a responsive, mobile-first website for an
-              underrepresented-kids coding initiative using HTML, CSS, and Tailwind
-              CSS.
+              Designed and built a responsive marketing site for an NGO-style coding initiative
+              using HTML, Tailwind CSS, and accessible UI patterns.
             </li>
             <li>
-              Collaborated with a cross-functional team of mentors and organizers
-              to translate program goals into clear user journeys and page layouts.
+              Collaborated with founders, curriculum leads, and designers to translate program
+              goals into clear sections such as hero, programs, impact, and call-to-action areas.
             </li>
             <li>
-              Implemented reusable UI components (hero, program cards, timeline,
-              and contact sections) to make future content updates easier.
+              Optimized layout for mobile-first viewing, improving readability and navigation
+              for parents, teachers, and volunteers.
             </li>
             <li>
-              Documented the site structure, content model, and contribution
-              workflow so non-technical volunteers could update the website
-              confidently.
+              Documented the front-end architecture, component structure, and content-update
+              process so non-technical team members could maintain the site.
             </li>
           </ul>
+        </article>
+      </div>
 
-          <!-- Key project box -->
-          <div
-            class="mt-5 rounded-xl bg-[#ECFEFF] border border-[#BAE6FD]
-                   px-4 py-3 text-sm"
-          >
-            <p class="font-semibold text-slate-900 mb-1">
-              Key Project: Coding Clubhouse Landing Page
-            </p>
-            <p class="text-slate-700">
-              Built an accessible landing page that showcases programs,
-              success stories, and call-to-action blocks for donations and
-              volunteering, strengthening the initiative’s online presence.
-            </p>
-          </div>
+      <!-- CONFAI SOLUTIONS – TECHNICAL WRITER -->
+      <div class="relative pl-6">
+        <div
+          class="absolute -left-9 top-4 h-10 w-10 rounded-full bg-[#F97316] text-white flex items-center justify-center text-sm font-semibold shadow-lg"
+        >
+          CS
         </div>
-      </article>
+
+        <article
+          class="bg-white rounded-2xl shadow-md border border-slate-100 px-5 py-5 md:px-7 md:py-6"
+        >
+          <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-2">
+            <div>
+              <h3 class="text-base md:text-lg font-semibold text-slate-900">
+                Technical Writer
+              </h3>
+              <p class="text-sm font-medium text-[#F97316]">
+                Confai Solutions, Hyderabad
+              </p>
+            </div>
+            <span
+              class="inline-flex items-center rounded-full bg-[#FFEDD5] px-3 py-1 text-xs font-semibold text-[#C05621]"
+            >
+              Oct 2021 – Mar 2023 · Freelance &amp; On-roll
+            </span>
+          </div>
+
+          <ul class="mt-4 space-y-2 text-sm text-slate-700 leading-relaxed">
+            <li>
+              Produced user guides, online help, FAQs, troubleshooting guides, and release notes
+              for multiple SaaS products, ensuring content stayed task-focused and easy to scan.
+            </li>
+            <li>
+              Structured documentation using clear information architecture, templates, and
+              reuse patterns to make complex workflows easier to follow.
+            </li>
+            <li>
+              Audited and edited technical content for clarity, accuracy, and consistency with
+              the company style guide, improving overall documentation quality.
+            </li>
+            <li>
+              Partnered with developers, product managers, and UX designers to capture accurate,
+              up-to-date feature behaviour and edge cases.
+            </li>
+            <li>
+              Maintained documentation as the products evolved, aligning docs with new releases,
+              feature flags, and configuration changes.
+            </li>
+          </ul>
+        </article>
+      </div>
+
+      <!-- iCLOUDEMS – CONTENT WRITER -->
+      <div class="relative pl-6">
+        <div
+          class="absolute -left-9 top-4 h-10 w-10 rounded-full bg-[#6366F1] text-white flex items-center justify-center text-sm font-semibold shadow-lg"
+        >
+          IC
+        </div>
+
+        <article
+          class="bg-white rounded-2xl shadow-md border border-slate-100 px-5 py-5 md:px-7 md:py-6"
+        >
+          <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-2">
+            <div>
+              <h3 class="text-base md:text-lg font-semibold text-slate-900">
+                Content Writer
+              </h3>
+              <p class="text-sm font-medium text-[#6366F1]">
+                iCloudEMS, Pune
+              </p>
+            </div>
+            <span
+              class="inline-flex items-center rounded-full bg-[#E0E7FF] px-3 py-1 text-xs font-semibold text-[#4338CA]"
+            >
+              Apr 2021 – Feb 2022
+            </span>
+          </div>
+
+          <ul class="mt-4 space-y-2 text-sm text-slate-700 leading-relaxed">
+            <li>
+              Authored 10–12 blogs per month and created 90–95% of the website’s marketing copy,
+              explaining EMS and ERP capabilities for higher-education institutions.
+            </li>
+            <li>
+              Applied SEO best practices to move key landing pages from the 5th to the 1st page
+              of Google, significantly increasing organic traffic.
+            </li>
+            <li>
+              Planned and wrote long-form articles, email content, and web copy that aligned with
+              product positioning and lead-generation goals.
+            </li>
+            <li>
+              Engaged with readers via email and community channels, gathering feedback that fed
+              back into content strategy and product messaging.
+            </li>
+          </ul>
+        </article>
+      </div>
+
     </div>
   </div>
 </section>
+
 
 
 <!-- ============= EDUCATION & CERTIFICATIONS ============= -->
@@ -678,14 +723,14 @@
           Bachelor of Engineering (Electronics &amp; Communication)
         </h3>
         <p class="mt-1 text-sm font-medium text-[#2563EB]">
-          Kurukshetra University
+          Maharishi Dayanand University (MDU)
         </p>
       </div>
 
       <span
         class="inline-flex items-center rounded-full bg-[#2563EB]/10 px-3 py-1 text-xs font-semibold text-[#2563EB]"
       >
-        2007
+        2009
       </span>
     </div>
 
